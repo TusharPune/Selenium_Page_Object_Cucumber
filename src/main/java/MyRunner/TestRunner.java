@@ -13,9 +13,10 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 
 @CucumberOptions(
-        features = "src/main/java/Features",
+        features = "/home/tushar/git/CucumberTestNG1/CucumberTestNG/src/main/java/Features/VerifyEmailQuoteMail.feature",
         glue = {"stepDefinitions"},
         tags = {"~@Ignore"},
+        dryRun=false, 
         format = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber-pretty",

@@ -3,6 +3,129 @@
     "line": 1,
     "elements": [
       {
+        "line": 16,
+        "name": "Need to verify email quote mail",
+        "description": "",
+        "id": "verify-email-content;need-to-verify-email-quote-mail;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "title of login page is GMAIN",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user enters \"naveenk\" and \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "naveenk",
+                  "offset": 13
+                },
+                {
+                  "val": "test@123",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_hopme_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "enter email subject",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "click to search",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "Open search result mail",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "verify mail content",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Email Content",
+    "description": "",
+    "id": "verify-email-content",
+    "keyword": "Feature",
+    "uri": "VerifyEmailQuoteMail.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
         "line": 15,
         "name": "Free CRM Login Test Scenario",
         "description": "",
@@ -12,8 +135,9 @@
         "steps": [
           {
             "result": {
-              "duration": 10242175386,
-              "status": "passed"
+              "duration": 173491828,
+              "error_message": "java.lang.IllegalStateException: The driver executable does not exist: /Users/naveenkhunteta/Downloads/chromedriver\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\n\tat stepDefinitions.LoginStepDefinition.user_already_on_login_page(LoginStepDefinition.java:23)\n\tat ✽.Given user is already on Login Page(login.feature:5)\n",
+              "status": "failed"
             },
             "line": 5,
             "name": "user is already on Login Page",
@@ -24,20 +148,16 @@
           },
           {
             "result": {
-              "duration": 9733303,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 6,
-            "name": "title of login page is Free CRM",
-            "match": {
-              "location": "LoginStepDefinition.title_of_login_page_is_free_CRM()"
-            },
+            "name": "title of login page is GMAIN",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 258433060,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "user enters \"naveenk\" and \"test@123\"",
@@ -62,8 +182,7 @@
           },
           {
             "result": {
-              "duration": 11333726997,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user clicks on login button",
@@ -74,8 +193,7 @@
           },
           {
             "result": {
-              "duration": 6375672,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user is on home page",
@@ -86,8 +204,7 @@
           },
           {
             "result": {
-              "duration": 87683080,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Close the browser",
